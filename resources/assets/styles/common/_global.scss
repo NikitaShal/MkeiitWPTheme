@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Rubik:400,500&subset=cyrillic');
+
+body,
+html {
+  font-family: 'Rubik', sans-serif;
+  font-weight: 400;
+  background-color: #fafafa;
+  ::selection { background: #90caf9; }
+}
