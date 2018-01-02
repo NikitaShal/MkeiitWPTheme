@@ -1,5 +1,5 @@
 import $ from 'jquery';
 
-wp.customize('blogname', (value) => {
+wp.customize.section.add('blogname', (value) => {
   value.bind(to => $('.brand').text(to));
 });

@@ -1,0 +1,106 @@
+footer {
+  margin-top: 50px;
+
+  .wrapper__footer {
+    background-color: #007ee5;
+    padding-top: 25px;
+    padding-bottom: 20px;
+
+    .copynamefooter {
+      font-size: 2rem;
+      position: absolute;
+      color: #fafafa;
+      cursor: pointer;
+      margin-top: 45px;
+      margin-left: 10px;
+    }
+
+    .info {
+      p {
+        font-weight: 500;
+        font-size: 1.2rem;
+        padding-left: 55px;
+        color: #fafafa;
+        line-height: 0.5;
+      }
+
+      .brand__img svg {
+        margin-left: -50px;
+        width: 100px;
+        height: 100%;
+        display: inline-block;
+        transition: 0.5s;
+      }
+
+      .brand__img::after {
+        content: 'ГАПОУ МО \A "Мурманский колледж экономики и \A информационных технологий"';
+        white-space: pre;
+        font-size: 1.5rem;
+        color: #fafafa;
+        display: inline-block;
+        vertical-align: top;
+        line-height: 1;
+        padding-top: 18px;
+        letter-spacing: -0.5px;
+        transition: 0.5s;
+        font-weight: 500;
+        margin-left: 5px;
+      }
+    }
+  }
+
+  .contact {
+    padding-top: 20px;
+
+    i {
+      margin-right: 20px;
+      font-size: 1.7rem;
+      float: left;
+      position: relative;
+    }
+
+    a {
+      font-weight: 500;
+      font-size: 1.2rem;
+      padding-left: 55px;
+      color: #fafafa;
+      line-height: 1;
+      margin-bottom: 25px;
+      display: inherit;
+    }
+  }
+}
+
+.underfooter {
+  background-color: #006dc6;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  a {
+    color: #fafafa;
+
+    span {
+      font-weight: 500;
+    }
+  }
+}
+
+@include media-breakpoint-down(md) {
+  .info {
+    display: none;
+  }
+
+  .contact {
+    a {
+      font-weight: 500;
+      display: inline-block;
+      font-size: 1rem !important;
+      color: #fafafa;
+      padding-left: 0 !important;
+    }
+  }
+
+  .copynamefooter {
+    margin-top: 40px !important;
+  }
+}

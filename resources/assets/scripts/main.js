@@ -4,9 +4,6 @@ import 'jquery';
 // Import everything from autoload
 import "./autoload/**/*"
 
-// Import Clipboard.JS
-import 'clipboard/dist/clipboard.min';
-
 // Import Slick
 import 'slick-carousel/slick/slick.min';
 

@@ -1,5 +1,10 @@
 @import "common/variables";
 
+$fa-font-path: "~font-awesome/fonts";
+
+// Import Font Awesome from node_modules
+@import "~font-awesome/scss/font-awesome.scss";
+
 /** Import everything from autoload */
 @import "./autoload/**/*";
 
@@ -21,6 +26,11 @@
 @import "components/comments";
 @import "components/forms";
 @import "components/wp-classes";
+@import "components/nav";
+@import "components/carousel";
+@import "components/spec";
+@import "components/news";
+@import "components/links";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";

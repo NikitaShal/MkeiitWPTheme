@@ -1,6 +1,6 @@
-<time class="updated" datetime="{{ get_post_time('c', true) }}">{{ get_the_date() }}</time>
-<p class="byline author vcard">
-  {{ __('By', 'sage') }} <a href="{{ get_author_posts_url(get_the_author_meta('ID')) }}" rel="author" class="fn">
-    {{ get_the_author() }}
-  </a>
-</p>
+<i class="fa fa-calendar"></i>
+<time class="updated" datetime="<?= get_post_time('c', true); ?>"><?= get_the_date(); ?></time>
+<?php if ( is_callable( array( 'Pageviews', 'get_placeholder' ) ) ) {
+$placeholder = Pageviews::get_placeholder( $post->ID );
+echo '<i class="fa fa-eye"></i> '.$placeholder ;
+} ?>

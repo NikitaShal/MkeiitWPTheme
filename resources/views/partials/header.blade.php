@@ -1,12 +1,28 @@
 <header class="header">
   <div class="container">
-
-      <div class="ad">
-        <div class="enter">
-          <h3>Планируте поступать?</h3>
-          <a href="<?php echo home_url(); ?>/about">Узнать подробнее</a>
+    <div class="row">
+      <div class="col-md-7">
+        <div class="brand">
+          <!--<a class="brand__img" href="<?= esc_url(home_url('/')); ?>">
+            <object type="image/svg+xml" data="@asset('images/Logo.svg')">
+              Ваш браузер не поддерживает SVG, пора обновляться :(
+            </object>
+          </a>-->
+          <a class="brandname" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
+          <!-- <i onclick="copyToClipboard('.brandname')" data-toggle="tooltip" data-placement="bottom" title="Скопировать название" class="fa fa-files-o copyname" data-clipboard-text='ГАПОУ МО "Мурманский колледж экономики и информационных технологий"' aria-hidden="true"></i> -->
         </div>
-        <a data-toggle="modal" data-target=".modal" class="already">Уже зачислен!</a>
+      </div>
+
+      <div class="col-md-1"></div>
+
+      <div class="col-md-4">
+        <div class="ad">
+          <div class="enter">
+            <h3>Планируте поступать?</h3>
+            <a href="<?php echo home_url(); ?>/about">Узнать подробнее</a>
+          </div>
+          <a data-toggle="modal" data-target=".modal" class="already">Уже зачислен!</a>
+        </div>
       </div>
 
       <div class="modal fade">
@@ -25,21 +41,6 @@
         </div>
       </div>
 
-    <div class="brand">
-      <a class="brand__img" href="<?= esc_url(home_url('/')); ?>">
-        <object type="image/svg+xml" data="@asset('images/Logo.svg')">
-          Ваш браузер не поддерживает SVG, пора обновляться :(
-        </object>
-      </a>
-      <a class="brand" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
-      <i data-toggle="tooltip" data-placement="bottom" title="Скопировать название" class="fa fa-files-o copyname" data-clipboard-text='ГАПОУ МО "Мурманский колледж экономики и информационных технологий"' aria-hidden="true"></i>
     </div>
-
   </div>
 </header>
-
-<div class="image__carousel">
-  <div><img src="<?php the_field('sliderpic1', 35); ?>"></div>
-  <div><img src="<?php the_field('sliderpic2', 35); ?>"></div>
-  <div><img src="<?php the_field('sliderpic3', 35); ?>"></div>
-</div>

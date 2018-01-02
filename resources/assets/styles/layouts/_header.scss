@@ -1,15 +1,49 @@
-.banner .nav li {
-  @extend .nav-item;
+.header {
+  background-color: #007ee5;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  .copyname {
+    font-size: 2rem;
+    position: relative;
+    color: #fafafa;
+    cursor: pointer;
+    display: block;
+    float: right;
+    margin-top: -30px;
+  }
 }
 
-.banner .nav a {
-  @extend .nav-link;
+.brand {
+  padding-bottom: 50px;
+  // .brand__img {
+  //   width: 170px;
+  //   height: 100%;
+  //   display: inline-block;
+  // }
+
+  .brandname {
+    padding-bottom: 0;
+    font-size: 2.2rem;
+    color: #fafafa;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1;
+    margin-top: 55px;
+    letter-spacing: -0.5px;
+    font-weight: 500;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
 
 .ad {
-  position: absolute;
+  position: relative;
   right: 0;
-  margin-right: 70px;
+  top: 0;
   text-align: center;
 
   .enter {
@@ -40,178 +74,3 @@
     }
   }
 }
-
-.header {
-  background-color: #007ee5;
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-bottom: 0;
-
-  .copyname {
-    font-size: 2rem;
-    position: absolute;
-    color: #fafafa;
-    cursor: pointer;
-    margin-top: 115px;
-    margin-left: 10px;
-  }
-}
-
-.brand__img {
-  width: 170px;
-  height: 100%;
-  display: inline-block;
-  transition: 0.5s;
-}
-
-// .nav-primary {
-//   position: sticky;
-//   top: 0;
-//   z-index: 10;
-//   background-color: #006dc6 !important;
-//   font-size: 18px;
-//   font-weight: 400;
-
-//   ul {
-//     list-style: none;
-
-//     li {
-//       cursor: pointer;
-//       padding-top: 10px;
-//       padding-bottom: 10px;
-
-//       &:hover {
-//         background-color: #fafafa;
-//       }
-
-//       &:hover {
-//         a {
-//           color: #006dc6;
-//           text-decoration: none;
-//         }
-//       }
-
-//       a {
-//         padding-left: 40px;
-//         padding-right: 40px;
-//         color: #fafafa;
-//       }
-//     }
-//   }
-// }
-
-// .carousel img {
-//   height: 50vh;
-//   width: 100%;
-// }
-
-// .container-2 {
-//   vertical-align: middle;
-//   white-space: normal;
-//   position: relative;
-
-//   input#search {
-//     width: 50px;
-//     height: 47px;
-//     background: #006dc6;
-//     border: none;
-//     font-size: 10pt;
-//     float: left;
-//     padding-left: 50px;
-//     color: #fff;
-//     -webkit-transition: width 0.55s ease;
-//     -moz-transition: width 0.55s ease;
-//     -ms-transition: width 0.55s ease;
-//     -o-transition: width 0.55s ease;
-//     transition: width 0.55s ease;
-
-//     &::-webkit-input-placeholder {
-//       color: #fafafa;
-//     }
-
-//     &:-moz-placeholder {
-//       /* Firefox 18- */
-//       color: #fafafa;
-//     }
-
-//     &::-moz-placeholder {
-//       /* Firefox 19+ */
-//       color: #fafafa;
-//     }
-
-//     &:-ms-input-placeholder {
-//       color: #fafafa;
-//     }
-//   }
-
-//   .icon {
-//     position: absolute;
-//     top: 50%;
-//     left: 0;
-//     margin-left: 17px;
-//     margin-top: 10px;
-//     z-index: 1;
-//     color: #fafafa;
-//   }
-
-//   input#search {
-//     &:focus,
-//     &:active {
-//       outline: none;
-//       width: 200px;
-//     }
-//   }
-
-//   &:hover {
-//     input#search {
-//       width: 200px;
-//     }
-
-//     .icon {
-//       color: #fafafa;
-//     }
-//   }
-// }
-
-// @include media-breakpoint-down(md) {
-//   .carousel img {
-//     height: 30vh;
-//   }
-
-//   .brand__img::after {
-//     content: 'МКЭиИТ';
-//     padding-top: 40px;
-//   }
-
-//   .brand__img svg {
-//     width: 100px;
-//   }
-
-//   .nav {
-//     justify-content: left !important;
-//   }
-
-//   .nav-primary ul li a {
-//     padding: 0;
-//     padding-right: 10px;
-//     padding-left: 10px;
-//   }
-
-//   .nav-primary ul li:hover,
-//   .nav-primary ul li a:hover {
-//     background-color: #006dc6;
-
-//     a {
-//       color: #fafafa;
-//       text-decoration: underline !important;
-//     }
-//   }
-
-//   .ad {
-//     display: none !important;
-//   }
-
-//   .copyname {
-//     display: none;
-//   }
-// }
