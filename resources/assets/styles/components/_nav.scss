@@ -1,12 +1,17 @@
-.nav-wrapper {
-  // position: sticky;
-  background-color: #006dc6;
-  font-size: 18px;
-  font-weight: 400;
+.scroll {
   white-space: nowrap;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+.nav-wrapper {
+  position: sticky;
+  background-color: #006dc6;
+  font-size: 18px;
+  min-width: 100%;
+  display: flex;
+  justify-content: center;
 
   ul {
     list-style: none;
