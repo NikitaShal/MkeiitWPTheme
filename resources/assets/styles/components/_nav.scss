@@ -1,15 +1,19 @@
-.nav-primary {
+.nav-wrapper {
   // position: sticky;
-  top: 0;
-  z-index: 10;
-  background-color: #006dc6 !important;
+  background-color: #006dc6;
   font-size: 18px;
   font-weight: 400;
+  white-space: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
 
   ul {
     list-style: none;
+    margin-bottom: 0;
 
     li {
+      display: inline-block;
       cursor: pointer;
       padding-top: 10px;
       padding-bottom: 10px;

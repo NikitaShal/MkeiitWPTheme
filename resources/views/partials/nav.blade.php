@@ -1,5 +1,5 @@
-<nav class="nav-primary scroll-x">
-  <div class="nav justify-content-center">
+<nav class="nav-wrapper">
+
   <div class="searchbox">
     <div class="search-container">
       <form method="get" id="searchform" action="<?php bloginfo('url'); ?>">
@@ -10,8 +10,9 @@
       </form>
     </div>
   </div>
-    @if (has_nav_menu('primary_navigation'))
-      {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'depth' => 1, 'menu_class' => 'nav']) !!}
-    @endif
-  </div>
+
+  @if (has_nav_menu('primary_navigation'))
+    {!! wp_nav_menu(['theme_location' => 'primary_navigation', 'depth' => 1, 'menu_class' => 'navigation']) !!}
+  @endif
+
 </nav>
