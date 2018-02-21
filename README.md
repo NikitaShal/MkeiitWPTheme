@@ -2,31 +2,22 @@
 [![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com)
 
-Sage is a WordPress starter theme with a modern development workflow.
+MkeiitWPTheme - тема созданая студентами колледжа Экономики и Информационных технологий г. Мурманска. Тема создана и заточена под использование только в рамках нашего учереждения, однако для удобства эксплуатирования, она легко настраивается, благодаря чему вы так же можете использовать данную тему в своих целях, бесплатно. Исходный код находиться под лицензией MIT, что позваляет вам использовать тему как угодно, но не в коммерческих целях.
 
-**Sage 9 is in active development and is currently in beta. The `master` branch tracks Sage 9 development. If you want a stable version, use the [latest Sage 8 release](https://github.com/roots/sage/releases/latest).**
+## Преимущества
 
-## Features
+* Sass для стилей
+* ES6 JavaScript
+* [Webpack](https://webpack.github.io/) для сборки, оптимизации изображений и минификации файлов
+* [Browsersync](http://www.browsersync.io/) для паралелльной разработке на разных устройствах
+* [Laravel Blade](https://laravel.com/docs/5.3/blade) как движок шаблонов
+* [Controller](https://github.com/soberwp/controller) для управления данными в фреймворке Laravel
+* [Bootstrap 4](http://getbootstrap.com/) - сетка
+* Font Awesome - иконки
 
-* Sass for stylesheets
-* ES6 for JavaScript
-* [Webpack](https://webpack.github.io/) for compiling assets, optimizing images, and concatenating and minifying files
-* [Browsersync](http://www.browsersync.io/) for synchronized browser testing
-* [Laravel Blade](https://laravel.com/docs/5.3/blade) as a templating engine
-* [Controller](https://github.com/soberwp/controller) for passing data to Blade templates
-* CSS framework options:
-  * [Bootstrap 4](http://getbootstrap.com/)
-  * [Bulma](http://bulma.io/)
-  * [Foundation](http://foundation.zurb.com/)
-  * [Tachyons](http://tachyons.io/)
-  * None (blank slate)
-* Font Awesome (optional)
+## Зависимости
 
-See a working example at [roots-example-project.com](https://roots-example-project.com/).
-
-## Requirements
-
-Make sure all dependencies have been installed before moving on:
+Прежде чем начать убедитесь что все пакеты установлены:
 
 * [WordPress](https://wordpress.org/) >= 4.7
 * [PHP](http://php.net/manual/en/install.php) >= 7.0
@@ -34,56 +25,11 @@ Make sure all dependencies have been installed before moving on:
 * [Node.js](http://nodejs.org/) >= 6.9.x
 * [Yarn](https://yarnpkg.com/en/docs/install)
 
-## Theme installation
+## Установка темы
 
-Install Sage using Composer from your WordPress themes directory (replace `your-theme-name` below with the name of your theme):
+Установка темы для разработки:
 
-```shell
-# @ app/themes/ or wp-content/themes/
-$ composer create-project roots/sage your-theme-name dev-master
-```
 
-During theme installation you will have the options to:
-
-* Update theme headers (theme name, description, author, etc.)
-* Select a CSS framework (Bootstrap, Bulma, Foundation, Tachyons, none)
-* Add Font Awesome
-* Configure Browsersync (path to theme, local development URL)
-
-## Theme structure
-
-```shell
-themes/your-theme-name/   # → Root of your Sage based theme
-├── app/                  # → Theme PHP
-│   ├── controllers/      # → Controller files
-│   ├── admin.php         # → Theme customizer setup
-│   ├── filters.php       # → Theme filters
-│   ├── helpers.php       # → Helper functions
-│   └── setup.php         # → Theme setup
-├── composer.json         # → Autoloading for `app/` files
-├── composer.lock         # → Composer lock file (never edit)
-├── dist/                 # → Built theme assets (never edit)
-├── node_modules/         # → Node.js packages (never edit)
-├── package.json          # → Node.js dependencies and scripts
-├── resources/            # → Theme assets and templates
-│   ├── assets/           # → Front-end assets
-│   │   ├── config.json   # → Settings for compiled assets
-│   │   ├── build/        # → Webpack and ESLint config
-│   │   ├── fonts/        # → Theme fonts
-│   │   ├── images/       # → Theme images
-│   │   ├── scripts/      # → Theme JS
-│   │   └── styles/       # → Theme stylesheets
-│   ├── functions.php     # → Composer autoloader, theme includes
-│   ├── index.php         # → Never manually edit
-│   ├── screenshot.png    # → Theme screenshot for WP admin
-│   ├── style.css         # → Theme meta information
-│   └── views/            # → Theme templates
-│       ├── layouts/      # → Base templates
-│       └── partials/     # → Partial templates
-└── vendor/               # → Composer packages (never edit)
-```
-
-## Theme setup
 
 Edit `app/setup.php` to enable or disable theme features, setup navigation menus, post thumbnail sizes, and sidebars.
 

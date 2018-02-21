@@ -8,6 +8,7 @@ export default {
       arrows: false,
       autoplay: true,
       autoplaySpeed: 2000,
+      zIndex: 5,
       //adaptiveHeight: true,
     })
     // only for mobile

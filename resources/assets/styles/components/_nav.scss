@@ -6,6 +6,7 @@
 }
 
 .nav-wrapper {
+  z-index: 10;
   position: sticky;
   background-color: #006dc6;
   font-size: 18px;
@@ -13,12 +14,41 @@
   display: flex;
   justify-content: center;
 
+  .sub-menu {
+    display: none;
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+
+    li {
+      position: relative;
+      background-color: #006dc6;
+      float: left;
+      clear: both;
+      width: 100%;
+      line-height: 25px;
+
+      &:hover {
+        a {
+          color: #006dc6 !important;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        color: #fafafa !important;
+      }
+    }
+  }
+
   ul {
     list-style: none;
     margin-bottom: 0;
 
     li {
       display: inline-block;
+      float: left;
       cursor: pointer;
       padding-top: 10px;
       padding-bottom: 10px;
@@ -35,8 +65,8 @@
       }
 
       a {
-        padding-left: 40px;
-        padding-right: 40px;
+        padding-left: 35px;
+        padding-right: 35px;
         color: #fafafa;
       }
     }
@@ -108,6 +138,77 @@
     .icon {
       color: #fafafa;
     }
+  }
+}
+
+li:hover > ul.sub-menu {
+  perspective: 1000px;
+
+  li {
+    transform-origin: top center;
+    opacity: 0;
+
+    &:nth-child(1) {
+      animation-name: menu-5;
+      animation-duration: 150ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+
+    &:nth-child(2) {
+      animation-name: menu-5;
+      animation-duration: 300ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+
+    &:nth-child(3) {
+      animation-name: menu-5;
+      animation-duration: 450ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+
+    &:nth-child(4) {
+      animation-name: menu-5;
+      animation-duration: 600ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+
+    &:nth-child(5) {
+      animation-name: menu-5;
+      animation-duration: 750ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+
+    &:nth-child(6) {
+      animation-name: menu-5;
+      animation-duration: 900ms;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-in-out;
+    }
+  }
+}
+
+@keyframes menu-5 {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    opacity: 1;
+  }
+
+  90% {
+    transform: scale(1.1);
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
   }
 }
 
