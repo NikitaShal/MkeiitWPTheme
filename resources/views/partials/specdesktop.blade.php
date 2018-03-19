@@ -4,15 +4,15 @@
 
         <img src="<?php echo esc_url( get_theme_mod( 'setting_spec1_image' ) ); ?>" data-src="<?= get_template_directory_uri() ?>/dist/images/spec1.jpg" alt="" class="bgspecprogramming">
 
-        <h2><?php echo get_theme_mod( 'setting_kurs_name1' ); ?></h2>
+        <h2><?php echo get_theme_mod( 'setting_kurs1_name' ); ?></h2>
 
         <div class="content invisible">
 
-          <p>Программирование в компьютерных системах <span>3 года 10 мес.</span></p>
+          <p><?php echo get_theme_mod( 'setting_kurs1_spec1_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs1_spec1_date' ); ?></span></p>
 
-          <p>Прикладная информатика <span>3 года 10 мес.</span></p>
+          <p><?php echo get_theme_mod( 'setting_kurs1_spec2_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs1_spec2_date' ); ?></span></p>
 
-          <p>Компьютерные сети <span>2 года 10 мес.</span></p>
+          <p><?php echo get_theme_mod( 'setting_kurs1_spec3_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs1_spec3_date' ); ?></span></p>
 
         </div>
 
@@ -22,15 +22,17 @@
 
       <div class="slice economy animation-element">
 
-        <img src="@asset('images/spec2.jpg')"  data-src="<?= get_template_directory_uri() ?>/dist/images/spec2.jpg" alt="" class="bgspececonomy">
+        <img src="<?php echo esc_url( get_theme_mod( 'setting_spec2_image' ) ); ?>"  data-src="<?= get_template_directory_uri() ?>/dist/images/spec2.jpg" alt="" class="bgspececonomy">
 
-        <h2><?php echo get_theme_mod( 'setting_kurs_name2' ); ?></h2>
+        <h2><?php echo get_theme_mod( 'setting_kurs2_name' ); ?></h2>
 
         <div class="content invisible">
 
-          <p>Экономика и бухгалтерия <span>3 года 10 мес.</span></p>
+          <p><?php echo get_theme_mod( 'setting_kurs2_spec1_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs2_spec1_date' ); ?></span></p>
 
-          <p>Банковское дело <span>3 года 10 мес.</span></p>
+          <p><?php echo get_theme_mod( 'setting_kurs2_spec2_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs2_spec2_date' ); ?></span></p>
+
+          <p><?php echo get_theme_mod( 'setting_kurs2_spec3_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs2_spec3_date' ); ?></span></p>
 
         </div>
 
@@ -40,15 +42,15 @@
 
       <div class="slice product animation-element">
 
-        <img src="@asset('images/spec3.jpg')"  data-src="<?= get_template_directory_uri() ?>/dist/images/spec3.jpg" alt="" class="bgspecproduct">
+        <img src="<?php echo esc_url( get_theme_mod( 'setting_spec3_image' ) ); ?>"  data-src="<?= get_template_directory_uri() ?>/dist/images/spec3.jpg" alt="" class="bgspecproduct">
 
-        <h2>товароведение</h2>
+        <h2><?php echo get_theme_mod( 'setting_kurs3_name' ); ?></h2>
 
         <div class="content invisible">
 
-          <p>Технология продукции <br> общественного питания <span>3 года 10 мес.</span></p>
+          <p><?php echo get_theme_mod( 'setting_kurs3_spec1_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs3_spec1_date' ); ?></span></p>
 
-          <p>Товароведение и экспертиза <br> качества потребительских товаров <span>3 года 10 мес.</span></p>
+          <p><?php echo get_theme_mod( 'setting_kurs3_spec2_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs3_spec2_date' ); ?></span></p>
 
         </div>
 

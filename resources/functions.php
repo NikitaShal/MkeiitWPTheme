@@ -127,7 +127,7 @@ add_action( 'customize_register', 'carousel_theme_customizer' );
 function spec_theme_customizer( $wp_customize ) {
 $wp_customize->add_panel('panel_spec',array(
     'title'=>'Список специальностей',
-    'description'=> 'Тут можно поменять фоновые картинки и названия ',
+    'description'=> 'Тут можно поменять фоновые картинки и названия специальностей ',
     'priority'=> 40,
 ));
 
@@ -140,30 +140,6 @@ $wp_customize->add_section('section_spec1',array(
     'panel'=>'panel_spec',
 ));
 
-$wp_customize->add_setting( 'setting_kurs_name1' );
-$wp_customize->add_control('contrl_kurs_name',array(
-    'label'=>'Название направления',
-    'type'=>'text',
-    'section'=>'section_spec1',
-    'settings'=>'setting_kurs_name1',
-)); add_action('customize_register','panel_spec');
-
-$wp_customize->add_setting( 'setting_spec1_name' );
-$wp_customize->add_control('contrl_spec1_name',array(
-    'label'=>'Название специальности 1',
-    'type'=>'text',
-    'section'=>'section_spec1',
-    'settings'=>'setting_spec1_name',
-)); add_action('customize_register','panel_spec');
-
-$wp_customize->add_setting( 'setting_spec1_date' );
-$wp_customize->add_control('contrl_spec1_date',array(
-    'label'=>'Время обучения',
-    'type'=>'text',
-    'section'=>'section_spec1',
-    'settings'=>'setting_spec1_date',
-)); add_action('customize_register','panel_spec');
-
 $wp_customize->add_setting( 'setting_spec1_image' );
 $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image1', array(
     'label'    => __( 'Фоновая картинка специальности 1', 'section1_spec1_image' ),
@@ -171,101 +147,218 @@ $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'imag
     'settings' => 'setting_spec1_image',
 ) ) );
 
-$wp_customize->add_setting( 'setting_spec2_name' );
-$wp_customize->add_control('contrl_spec2_name',array(
+$wp_customize->add_setting( 'setting_kurs1_name' );
+$wp_customize->add_control('contrl_kurs1_name',array(
+    'label'=>'Название направления 1',
+    'type'=>'text',
+    'section'=>'section_spec1',
+    'settings'=>'setting_kurs1_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs1_spec1_name' );
+$wp_customize->add_control('contrl_kurs1_spec1_name',array(
+    'label'=>'Название специальности 1',
+    'type'=>'text',
+    'section'=>'section_spec1',
+    'settings'=>'setting_kurs1_spec1_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs1_spec1_date' );
+$wp_customize->add_control('contrl_kurs1_spec1_date',array(
+    'label'=>'Время обучения',
+    'type'=>'text',
+    'section'=>'section_spec1',
+    'settings'=>'setting_kurs1_spec1_date',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs1_spec2_name' );
+$wp_customize->add_control('contrl_kurs1_spec2_name',array(
     'label'=>'Название специальности 2',
     'type'=>'text',
     'section'=>'section_spec1',
-    'settings'=>'setting_spec2_name',
+    'settings'=>'setting_kurs1_spec2_name',
 )); add_action('customize_register','panel_spec');
 
-$wp_customize->add_setting( 'setting_spec2_date' );
-$wp_customize->add_control('contrl_spec2_date',array(
+$wp_customize->add_setting( 'setting_kurs1_spec2_date' );
+$wp_customize->add_control('contrl_kurs1_spec2_date',array(
     'label'=>'Время обучения',
     'type'=>'text',
     'section'=>'section_spec1',
-    'settings'=>'setting_spec2_date',
+    'settings'=>'setting_kurs1_spec2_date',
 )); add_action('customize_register','panel_spec');
 
-$wp_customize->add_setting( 'setting_spec2_image' );
-$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image2', array(
-    'label'    => __( 'Фоновая картинка специальности 2', 'section1_spec2_image' ),
-    'section'  => 'section_spec1',
-    'settings' => 'setting_spec2_image',
-) ) );
-
-$wp_customize->add_setting( 'setting_spec3_name' );
-$wp_customize->add_control('contrl_spec3_name',array(
+$wp_customize->add_setting( 'setting_kurs1_spec3_name' );
+$wp_customize->add_control('contrl_kurs1_spec3_name',array(
     'label'=>'Название специальности 3',
     'type'=>'text',
     'section'=>'section_spec1',
-    'settings'=>'setting_spec3_name',
+    'settings'=>'setting_kurs1_spec3_name',
 )); add_action('customize_register','panel_spec');
 
-$wp_customize->add_setting( 'setting_spec3_date' );
-$wp_customize->add_control('contrl_spec3_date',array(
+$wp_customize->add_setting( 'setting_kurs1_spec3_date' );
+$wp_customize->add_control('contrl_kurs1_spec3_date',array(
     'label'=>'Время обучения',
     'type'=>'text',
     'section'=>'section_spec1',
-    'settings'=>'setting_spec3_date',
+    'settings'=>'setting_kurs1_spec3_date',
 )); add_action('customize_register','panel_spec');
+
+/**
+ * Направление 1 Конец
+ */
+
+/**
+ * Направление 2
+ */
+$wp_customize->add_section('section_spec2',array(
+    'title'=>'направление 2',
+    'priority'=>10,
+    'panel'=>'panel_spec',
+));
+
+$wp_customize->add_setting( 'setting_spec2_image' );
+$wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image2', array(
+    'label'    => __( 'Фоновая картинка специальности 2', 'section2_spec1_image' ),
+    'section'  => 'section_spec2',
+    'settings' => 'setting_spec2_image',
+) ) );
+
+$wp_customize->add_setting( 'setting_kurs2_name' );
+$wp_customize->add_control('contrl_kurs2_name',array(
+    'label'=>'Название направления 2',
+    'type'=>'text',
+    'section'=>'section_spec2',
+    'settings'=>'setting_kurs2_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs2_spec1_name' );
+$wp_customize->add_control('contrl_kurs2_spec1_name',array(
+    'label'=>'Название специальности 1',
+    'type'=>'text',
+    'section'=>'section_spec2',
+    'settings'=>'setting_kurs2_spec1_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs2_spec1_date' );
+$wp_customize->add_control('contrl_kurs2_spec1_date',array(
+    'label'=>'Время обучения',
+    'type'=>'text',
+    'section'=>'section_spec2',
+    'settings'=>'setting_kurs2_spec1_date',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs2_spec2_name' );
+$wp_customize->add_control('contrl_kurs2_spec2_name',array(
+    'label'=>'Название специальности 2',
+    'type'=>'text',
+    'section'=>'section_spec2',
+    'settings'=>'setting_kurs2_spec2_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs2_spec2_date' );
+$wp_customize->add_control('contrl_kurs2_spec2_date',array(
+    'label'=>'Время обучения',
+    'type'=>'text',
+    'section'=>'section_spec2',
+    'settings'=>'setting_kurs2_spec2_date',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs2_spec3_name' );
+$wp_customize->add_control('contrl_kurs2_spec3_name',array(
+    'label'=>'Название специальности 3',
+    'type'=>'text',
+    'section'=>'section_spec2',
+    'settings'=>'setting_kurs2_spec3_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs2_spec3_date' );
+$wp_customize->add_control('contrl_kurs2_spec3_date',array(
+    'label'=>'Время обучения',
+    'type'=>'text',
+    'section'=>'section_spec2',
+    'settings'=>'setting_kurs2_spec3_date',
+)); add_action('customize_register','panel_spec');
+
+/**
+ * Направление 2 Конец
+ */
+
+/**
+ * Направление 3
+ */
+$wp_customize->add_section('section_spec3',array(
+    'title'=>'направление 3',
+    'priority'=>10,
+    'panel'=>'panel_spec',
+));
 
 $wp_customize->add_setting( 'setting_spec3_image' );
 $wp_customize->add_control( new WP_Customize_Image_Control( $wp_customize, 'image3', array(
-    'label'    => __( 'Фоновая картинка специальности 3', 'section1_spec3_image' ),
-    'section'  => 'section_spec1',
+    'label'    => __( 'Фоновая картинка специальности 3', 'section3_spec1_image' ),
+    'section'  => 'section_spec3',
     'settings' => 'setting_spec3_image',
 ) ) );
+
+$wp_customize->add_setting( 'setting_kurs3_name' );
+$wp_customize->add_control('contrl_kurs3_name',array(
+    'label'=>'Название направления 3',
+    'type'=>'text',
+    'section'=>'section_spec3',
+    'settings'=>'setting_kurs3_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs3_spec1_name' );
+$wp_customize->add_control('contrl_kurs3_spec1_name',array(
+    'label'=>'Название специальности 1',
+    'type'=>'text',
+    'section'=>'section_spec3',
+    'settings'=>'setting_kurs3_spec1_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs3_spec1_date' );
+$wp_customize->add_control('contrl_kurs2_spec1_date',array(
+    'label'=>'Время обучения',
+    'type'=>'text',
+    'section'=>'section_spec3',
+    'settings'=>'setting_kurs3_spec1_date',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs3_spec2_name' );
+$wp_customize->add_control('contrl_kurs2_spec2_name',array(
+    'label'=>'Название специальности 2',
+    'type'=>'text',
+    'section'=>'section_spec3',
+    'settings'=>'setting_kurs3_spec2_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs3_spec2_date' );
+$wp_customize->add_control('contrl_kurs2_spec2_date',array(
+    'label'=>'Время обучения',
+    'type'=>'text',
+    'section'=>'section_spec3',
+    'settings'=>'setting_kurs3_spec2_date',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs3_spec3_name' );
+$wp_customize->add_control('contrl_kurs3_spec3_name',array(
+    'label'=>'Название специальности 3',
+    'type'=>'text',
+    'section'=>'section_spec3',
+    'settings'=>'setting_kurs3_spec3_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs3_spec3_date' );
+$wp_customize->add_control('contrl_kurs2_spec3_date',array(
+    'label'=>'Время обучения',
+    'type'=>'text',
+    'section'=>'section_spec3',
+    'settings'=>'setting_kurs3_spec3_date',
+)); add_action('customize_register','panel_spec');
+
 /**
- * Направление 1 Конец
+ * Направление 3 Конец
  */
 
 }
 add_action( 'customize_register', 'spec_theme_customizer' );
 
-
-/**
- * Register a book post type, with REST API support
- *
- * Based on example at: https://codex.wordpress.org/Function_Reference/register_post_type
- */
-add_action( 'init', 'schedule_cpt' );
-function schedule_cpt() {
-  $labels = array(
-    'name'               => _x( 'Расписание', 'post type general name', 'your-plugin-textdomain' ),
-    'singular_name'      => _x( 'Расписание', 'post type singular name', 'your-plugin-textdomain' ),
-    'menu_name'          => _x( 'Расписания', 'admin menu', 'your-plugin-textdomain' ),
-    'name_admin_bar'     => _x( 'Расписание', 'add new on admin bar', 'your-plugin-textdomain' ),
-    'add_new'            => _x( 'Добавить', 'book', 'your-plugin-textdomain' ),
-    'add_new_item'       => __( 'Добавить расписание', 'your-plugin-textdomain' ),
-    'new_item'           => __( 'Новое расписание', 'your-plugin-textdomain' ),
-    'edit_item'          => __( 'Редактировать расписание', 'your-plugin-textdomain' ),
-    'view_item'          => __( 'Посмотреть расписание', 'your-plugin-textdomain' ),
-    'all_items'          => __( 'Все', 'your-plugin-textdomain' ),
-    'search_items'       => __( 'Поиск', 'your-plugin-textdomain' ),
-    'parent_item_colon'  => __( 'Parent Books:', 'your-plugin-textdomain' ),
-    'not_found'          => __( 'Расписаний не найдено.', 'your-plugin-textdomain' ),
-    'not_found_in_trash' => __( 'В корзине пусто.', 'your-plugin-textdomain' )
-  );
-
-  $args = array(
-    'labels'             => $labels,
-    'description'        => __( 'Описание', 'your-plugin-textdomain' ),
-    'public'             => true,
-    'publicly_queryable' => true,
-    'show_ui'            => true,
-    'show_in_menu'       => true,
-    'query_var'          => true,
-    'rewrite'            => array( 'slug' => 'schedule' ),
-    'capability_type'    => 'post',
-    'has_archive'        => true,
-    'hierarchical'       => false,
-    'menu_position'      => null,
-    'show_in_rest'       => true,
-    'rest_base'          => 'schedules',
-    'rest_controller_class' => 'WP_REST_Posts_Controller',
-    'supports'           => array( 'title', 'editor', 'author', ),
-  );
-  flush_rewrite_rules( false );
-  register_post_type( 'schedule', $args );
-}
