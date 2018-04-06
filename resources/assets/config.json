@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/MkeiitWPTheme",
-  "devUrl": "http://localhost/wp",
+  "devUrl": "http://127.0.0.1/wp",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

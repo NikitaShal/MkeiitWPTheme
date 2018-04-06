@@ -104,7 +104,6 @@
   },
   "dependencies": {
     "bootstrap": "v4.0.0-beta.2",
-    "font-awesome": "^4.7.0",
     "jquery": "1.12.4 - 3",
     "popper.js": "^1.12.3",
     "slick-carousel": "^1.8.1"

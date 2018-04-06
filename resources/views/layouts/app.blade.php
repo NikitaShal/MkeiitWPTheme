@@ -11,19 +11,19 @@
           @yield('content')
         </main>
         @if (App\display_sidebar())
-          <aside class="sidebar">
+<!--           <aside class="sidebar">
             @include('partials.sidebar')
-          </aside>
+          </aside> -->
         @endif
       </div>
     </div>
 
-    <div class="fab-container">
+<!--     <div class="fab-container">
       <a href="" target="_blank">
         <div class="profile fab" tooltip="Расписание">
         </div>
       </a>
-    </div>
+    </div> -->
 
     @php(do_action('get_footer'))
     @include('partials.footer')

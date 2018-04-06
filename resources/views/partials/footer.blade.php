@@ -14,7 +14,7 @@
               Ваш браузер не поддерживает SVG, пора обновляться :(
             </object> -->
             </a>
-            <i data-toggle="tooltip" data-placement="bottom" title="Скопировать название" class="fa fa-files-o copynamefooter" data-clipboard-text='ГАПОУ МО "Мурманский колледж экономики и информационных технологий"' aria-hidden="true"></i>
+<!--             <i data-toggle="tooltip" data-placement="bottom" title="Скопировать название" class="fas fa-files-o copynamefooter" data-clipboard-text='ГАПОУ МО "Мурманский колледж экономики и информационных технологий"' aria-hidden="true"></i> -->
           </div>
 
           <p style="padding-top: 30px;">Информация &copy; 1997-2017 МКЭиИТ</p>
@@ -23,9 +23,9 @@
       </div>
 
       <div class="contact col-md-5 col-xs-12 offset-xs-0">
-        <a href="" style="margin-top: 20px;"><i class="fa fa-phone" aria-hidden="true"></i>Контакты</a>
-        <a href=""><i style="margin-left: -7px;" class="fa fa-envelope" aria-hidden="true"></i>Отправить письмо</a>
-        <a target="_blank" href="https://goo.gl/maps/pzX4aPN4uVu"><i class="fa fa-map-marker" aria-hidden="true"></i>183025, г. Мурманск ул. Полярные зори, 60</a>
+        <a href="" style="margin-top: 20px;"><i class="fas fa-phone" aria-hidden="true"></i>Контакты</a>
+        <a href=""><i style="margin-left: -7px;" class="fas fa-envelope" aria-hidden="true"></i>Отправить письмо</a>
+        <a target="_blank" href="https://goo.gl/maps/pzX4aPN4uVu"><i class="fas fa-map-marker" aria-hidden="true"></i>183025, г. Мурманск ул. Полярные зори, 60</a>
       </div>
 
     </div>
