@@ -8,6 +8,7 @@
               Ваш браузер не поддерживает SVG, пора обновляться :(
             </object>
           </a>-->
+          <?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?>
           <a class="brandname" href="{{ home_url('/') }}">{{ get_bloginfo('name', 'display') }}</a>
           <!-- <i onclick="copyToClipboard('.brandname')" data-toggle="tooltip" data-placement="bottom" title="Скопировать название" class="fa fa-files-o copyname" data-clipboard-text='ГАПОУ МО "Мурманский колледж экономики и информационных технологий"' aria-hidden="true"></i> -->
         </div>
