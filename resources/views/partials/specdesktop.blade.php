@@ -16,7 +16,7 @@
 
         </div>
 
-        <h4 class="more__button invisible">Подробнее..</h4>
+        <a href="<?php echo get_theme_mod( 'f1_course_url_settings' ); ?>"><h4 class="more__button invisible">Подробнее..</h4></a>
 
       </div>
 
@@ -36,7 +36,7 @@
 
         </div>
 
-        <h4 class="more__button invisible">Подробнее..</h4>
+        <a href="<?php echo get_theme_mod( 'f2_course_url_settings' ); ?>"><h4 class="more__button invisible">Подробнее..</h4></a>
 
       </div>
 
@@ -54,7 +54,7 @@
 
         </div>
 
-        <h4 class="more__button invisible">Подробнее..</h4>
+        <a href="<?php echo get_theme_mod( 'f3_course_url_settings' ); ?>"><h4 class="more__button invisible">Подробнее..</h4></a>
 
       </div>
 

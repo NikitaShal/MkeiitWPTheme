@@ -7,9 +7,8 @@ export default {
       infinite: true,
       arrows: false,
       autoplay: true,
-      autoplaySpeed: 2000,
+      autoplaySpeed: 1500,
       zIndex: 5,
-      //adaptiveHeight: true,
     })
     // only for mobile
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {

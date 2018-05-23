@@ -20,7 +20,7 @@
         <div class="ad">
           <div class="enter">
             <h3>Планируте поступать?</h3>
-            <a href="<?php echo home_url(); ?>/about">Узнать подробнее</a>
+            <a href="<?php echo get_theme_mod( 'about_url_settings' ); ?>">Узнать подробнее</a>
           </div>
           <a data-toggle="modal" data-target=".modal" class="already">Уже зачислен!</a>
         </div>

@@ -362,3 +362,57 @@ $wp_customize->add_control('contrl_kurs2_spec3_date',array(
 }
 add_action( 'customize_register', 'spec_theme_customizer' );
 
+/**
+ * Add carousel customization
+ */
+function links_theme_customizer( $wp_customize ) {
+    $wp_customize->add_section( 'links_settings' , array(
+        'title'       => __( 'Ссылки', 'carousel_images' ),
+        'priority'    => 10,
+        'description' => 'Настройка ссылок на главной',
+    ) );
+    $wp_customize->add_setting( 'about_url_settings');
+    $wp_customize->add_control( 'about_url_settings', array(
+      'type' => 'url',
+      'section' => 'links_settings', // Add a default or your own section
+      'label' => __( 'Ссылка "подробнее"' ),
+      'description' => __( 'Ссылка на страницу подробнее' ),
+      'input_attrs' => array(
+        'placeholder' => __( 'Да прямо сюда' ),
+      ),
+    ) );
+    $wp_customize->add_setting( 'f1_course_url_settings');
+    $wp_customize->add_control( 'f1_course_url_settings', array(
+      'type' => 'url',
+      'section' => 'links_settings', // Add a default or your own section
+      'label' => __( 'Ссылка подробнее о направлении 1"' ),
+      'description' => __( 'Давай сюда ссылку' ),
+      'input_attrs' => array(
+        'placeholder' => __( 'Да прямо сюда' ),
+      ),
+    ) );
+    $wp_customize->add_setting( 'f2_course_url_settings');
+    $wp_customize->add_control( 'f2_course_url_settings', array(
+      'type' => 'url',
+      'section' => 'links_settings', // Add a default or your own section
+      'label' => __( 'Ссылка подробнее о направлении 2"' ),
+      'description' => __( 'Давай сюда ссылку' ),
+      'input_attrs' => array(
+        'placeholder' => __( 'Да прямо сюда' ),
+      ),
+    ) );
+    $wp_customize->add_setting( 'f3_course_url_settings');
+    $wp_customize->add_control( 'f3_course_url_settings', array(
+      'type' => 'url',
+      'section' => 'links_settings', // Add a default or your own section
+      'label' => __( 'Ссылка подробнее о направлении 3"' ),
+      'description' => __( 'Давай сюда ссылку' ),
+      'input_attrs' => array(
+        'placeholder' => __( 'Да прямо сюда' ),
+      ),
+    ) );
+    function themeslug_sanitize_url( $url ) {
+      return esc_url_raw( $url );
+    }
+}
+add_action( 'customize_register', 'links_theme_customizer' );
