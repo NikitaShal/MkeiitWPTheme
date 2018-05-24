@@ -33,4 +33,53 @@ MkeiitWPTheme - тема созданая студентами колледжа 
 
 Документация по Roots/Sage - https://roots.io/sage/
 
-### Установка
+### Подготовка к работе
+
+1. Клонируем репозиторий темы в папку с темами Wordpress "../Wordpress/wp-content/themes"
+
+```shell $ git clone https://github.com/NikitaShal/MkeiitWPTheme.git @название папки вашей темы на латинице@ ```
+
+2. Переходим в папку с темой
+
+```shell $ cd @название папки вашей темы@ ```
+
+3. Устанавливаем пакеты для front-end и сборки(убедитесь что nodejs и yarn установелны)
+
+```shell $ yarn ```
+
+Для разработки и сборки темы все готово!
+
+## Структура темы 
+
+```shell
+themes/your-theme-name/   # → Корневая папка
+├── app/                  # → ПХП
+│   ├── controllers/      # → Файлы контроллера
+│   ├── admin.php         # → Настройка Customizer
+│   ├── filters.php       # → Фильтры темы
+│   ├── helpers.php       # → Вспомогательные функции
+│   └── setup.php         # → Установки темы
+├── composer.json         # → Автозагрузка файлов в  `app/`
+├── composer.lock         # → Composer lock файл (не изменять)
+├── dist/                 # → Конечная сборка файлов темы (не изменять)
+├── node_modules/         # → Node.js пакеты (не изменять)
+├── package.json          # → Node.js зависимости и скрипты
+├── resources/            # → Шаблоны и файлы темы
+│   ├── assets/           # → Front-end файлы
+│   │   ├── config.json   # → Настройки для компилируемых файлов
+│   │   ├── build/        # → Webpack и ESLint настройки
+│   │   ├── fonts/        # → Шрифты темы
+│   │   ├── images/       # → Изображения темы
+│   │   ├── scripts/      # → Javascript скрипты темы
+│   │   └── styles/       # → Файлы стилей темы
+│   ├── functions.php     # → Автозагрузка Composer, зависимости темы
+│   ├── index.php         # → Никогда не редактируйте вручную
+│   ├── screenshot.png    # → Скриншот темы для Wp-Admin
+│   ├── style.css         # → Мета данные темы для Wp-Adminb
+│   └── views/            # → Шаблоны темы
+│       ├── layouts/      # → Базовые шаблоны
+│       └── partials/     # → Шаблонные части
+└── vendor/               # → Пакеты Composer (не изменять)
+
+```
+
