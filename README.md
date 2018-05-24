@@ -4,16 +4,16 @@
 
 MkeiitWPTheme - тема созданая студентами колледжа Экономики и Информационных технологий г. Мурманска. Тема создана и заточена под использование только в рамках нашего учереждения, однако для удобства эксплуатирования, она легко настраивается, благодаря чему вы так же можете использовать данную тему в своих целях, бесплатно. Исходный код находиться под лицензией MIT, что позваляет вам использовать тему как угодно, но не в коммерческих целях.
 
-## Преимущества
+## Все не так просто. Особенности
 
-* Sass для стилей
-* ES6 JavaScript
+* [Sass](http://sass-lang.com) компилируемый в css язык стилей
+* [ES6 JavaScript](http://es6-features.org) - javascript давно за пределами вашего понимания
 * [Webpack](https://webpack.github.io/) для сборки, оптимизации изображений и минификации файлов
 * [Browsersync](http://www.browsersync.io/) для паралелльной разработке на разных устройствах
 * [Laravel Blade](https://laravel.com/docs/5.3/blade) как движок шаблонов
 * [Controller](https://github.com/soberwp/controller) для управления данными в фреймворке Laravel
-* [Bootstrap 4](http://getbootstrap.com/) - сетка
-* Font Awesome - иконки
+* [Bootstrap 4](http://getbootstrap.com/) - адаптивная сетка
+* [Font Awesome](https://fontawesome.com) - иконки
 
 ## Зависимости
 
@@ -25,45 +25,11 @@ MkeiitWPTheme - тема созданая студентами колледжа 
 * [Node.js](http://nodejs.org/) >= 6.9.x
 * [Yarn](https://yarnpkg.com/en/docs/install)
 
-## Установка темы
+## Установка и сборка темы для своего сайта на Wordpress
 
-Установка темы для разработки:
+Как основа сборки темы исапользуется разработка от команды Roots. Sage 9 это отличный шаблон для старта создания своей темы, отличная документация и большое активное сообщество помогут вам, знание английского обязательно.
 
+Документация по Roots/Sage - https://roots.io/sage/
 
+### Установка
 
-Edit `app/setup.php` to enable or disable theme features, setup navigation menus, post thumbnail sizes, and sidebars.
-
-## Theme development
-
-* Run `yarn` from the theme directory to install dependencies
-* Update `resources/assets/config.json` settings:
-  * `devUrl` should reflect your local development hostname
-  * `publicPath` should reflect your WordPress folder structure (`/wp-content/themes/sage` for non-[Bedrock](https://roots.io/bedrock/) installs)
-
-### Build commands
-
-* `yarn run start` — Compile assets when file changes are made, start Browsersync session
-* `yarn run build` — Compile and optimize the files in your assets directory
-* `yarn run build:production` — Compile assets for production
-
-## Documentation
-
-Sage 8 documentation is available at [https://roots.io/sage/docs/](https://roots.io/sage/docs/).
-
-Sage 9 documentation is currently in progress and can be viewed at [https://github.com/roots/docs/tree/sage-9/sage](https://github.com/roots/docs/tree/sage-9/sage).
-
-Controller documentation is available at [https://github.com/soberwp/controller#usage](https://github.com/soberwp/controller#usage).
-
-## Contributing
-
-Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
-
-## Community
-
-Keep track of development and community news.
-
-* Participate on the [Roots Discourse](https://discourse.roots.io/)
-* Follow [@rootswp on Twitter](https://twitter.com/rootswp)
-* Read and subscribe to the [Roots Blog](https://roots.io/blog/)
-* Subscribe to the [Roots Newsletter](https://roots.io/subscribe/)
-* Listen to the [Roots Radio podcast](https://roots.io/podcast/)
