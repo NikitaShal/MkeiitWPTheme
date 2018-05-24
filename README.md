@@ -2,9 +2,11 @@
 [![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com)
 
+## Введение 
+
 MkeiitWPTheme - тема созданая студентами колледжа Экономики и Информационных технологий г. Мурманска. Тема создана и заточена под использование только в рамках нашего учереждения, однако для удобства эксплуатирования, она легко настраивается, благодаря чему вы так же можете использовать данную тему в своих целях, бесплатно. Исходный код находиться под лицензией MIT, что позваляет вам использовать тему как угодно, но не в коммерческих целях.
 
-## Все не так просто. Особенности
+## Все не так просто. Продвинутая разработка front-end благодаря:
 
 * [Sass](http://sass-lang.com) компилируемый в css язык стилей
 * [ES6 JavaScript](http://es6-features.org) - javascript давно за пределами вашего понимания
@@ -32,4 +34,3 @@ MkeiitWPTheme - тема созданая студентами колледжа 
 Документация по Roots/Sage - https://roots.io/sage/
 
 ### Установка
-
