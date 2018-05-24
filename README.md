@@ -37,15 +37,21 @@ MkeiitWPTheme - тема созданая студентами колледжа 
 
 1. Клонируем репозиторий темы в папку с темами Wordpress "../Wordpress/wp-content/themes"
 
-```shell $ git clone https://github.com/NikitaShal/MkeiitWPTheme.git @название папки вашей темы на латинице@ ```
+```shell
+ $ git clone https://github.com/NikitaShal/MkeiitWPTheme.git @название папки вашей темы на латинице@ 
+ ```
 
 2. Переходим в папку с темой
 
-```shell $ cd @название папки вашей темы@ ```
+```shell
+$ cd @название папки вашей темы@ 
+```
 
 3. Устанавливаем пакеты для front-end и сборки(убедитесь что nodejs и yarn установелны)
 
-```shell $ yarn ```
+```shell
+ $ yarn 
+ ```
 
 Для разработки и сборки темы все готово!
 
@@ -53,7 +59,7 @@ MkeiitWPTheme - тема созданая студентами колледжа 
 
 ```shell
 themes/your-theme-name/   # → Корневая папка
-├── app/                  # → ПХП
+├── app/                  # → ПХП файлы
 │   ├── controllers/      # → Файлы контроллера
 │   ├── admin.php         # → Настройка Customizer
 │   ├── filters.php       # → Фильтры темы
