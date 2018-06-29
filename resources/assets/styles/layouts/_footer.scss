@@ -6,69 +6,63 @@ footer {
     padding-top: 25px;
     padding-bottom: 20px;
 
-    .copynamefooter {
-      font-size: 2rem;
-      position: absolute;
-      color: #fafafa;
-      cursor: pointer;
-      margin-top: 45px;
-      margin-left: 10px;
+    .brand {
+      font-size: 1.5rem;
+
+      a {
+        color: #fafafa;
+        font-weight: 500;
+
+        &:hover {
+          text-decoration: none;
+        }
+      }
     }
 
     .info {
       p {
         font-weight: 500;
         font-size: 1.2rem;
-        padding-left: 55px;
         color: #fafafa;
         line-height: 0.5;
+
+        span {
+          color: #ffb74d;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .contact {
+      padding-top: 10px;
+
+      i {
+        margin-right: 15px;
+        font-size: 1.7rem;
+        float: left;
+        position: relative;
       }
 
-      .brand__img svg {
-        margin-left: -50px;
-        width: 100px;
-        height: 100%;
-        display: inline-block;
-        transition: 0.5s;
-      }
-
-      .brand__img::after {
-        content: 'ГАПОУ МО \A "Мурманский колледж экономики и \A информационных технологий"';
-        white-space: pre;
-        font-size: 1.5rem;
-        color: #fafafa;
-        display: inline-block;
-        vertical-align: top;
-        line-height: 1;
-        padding-top: 18px;
-        letter-spacing: -0.5px;
-        transition: 0.5s;
+      a {
         font-weight: 500;
-        margin-left: 5px;
+        font-size: 1.3rem;
+        color: #fafafa;
+        line-height: 1;
+        margin-bottom: 25px;
+        display: inherit;
+        cursor: pointer;
+        text-decoration: none;
+
+        &:hover {
+          color: #fafafa;
+        }
       }
     }
   }
+}
 
-  .contact {
-    padding-top: 20px;
-
-    i {
-      margin-right: 20px;
-      font-size: 1.7rem;
-      float: left;
-      position: relative;
-    }
-
-    a {
-      font-weight: 500;
-      font-size: 1.2rem;
-      padding-left: 55px;
-      color: #fafafa;
-      line-height: 1;
-      margin-bottom: 25px;
-      display: inherit;
-    }
-  }
+.maps__container {
+  display: none;
 }
 
 .underfooter {
@@ -86,10 +80,6 @@ footer {
 }
 
 @include media-breakpoint-down(md) {
-  .info {
-    display: none;
-  }
-
   .contact {
     a {
       font-weight: 500;

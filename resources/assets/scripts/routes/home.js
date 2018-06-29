@@ -9,8 +9,8 @@ export default {
       autoplay: true,
       autoplaySpeed: 1500,
       zIndex: 5,
-    })
-    // only for mobile
+    });
+    // only for mobile carousel
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       $( ".post" ).addClass( "text-center" )
       $( ".links" ).removeClass( "container" )

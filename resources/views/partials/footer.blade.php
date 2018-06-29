@@ -6,32 +6,33 @@
 
     <div class="row">
 
-      <div class="info col-md-6 offset-md-1">
+      <div class="info col-md-6">
 
           <div class="brand">
-            <a class="brand__img" href="<?= esc_url(home_url('/')); ?>">
-            <!-- <object type="image/svg+xml" data="@asset('images/Logo.svg')">
-              Ваш браузер не поддерживает SVG, пора обновляться :(
-            </object> -->
+            <a href="<?= esc_url(home_url('/')); ?>">
+              ГАПОУ МО "Мурманский колледж экономики и информационных технологий"
             </a>
-<!--             <i data-toggle="tooltip" data-placement="bottom" title="Скопировать название" class="fas fa-files-o copynamefooter" data-clipboard-text='ГАПОУ МО "Мурманский колледж экономики и информационных технологий"' aria-hidden="true"></i> -->
           </div>
 
-          <p style="padding-top: 30px;">Информация &copy; 1997-2017 МКЭиИТ</p>
-          <p>Разработка &copy; 2017</p>
+          <p>Информация &copy; 1997-2018 МКЭиИТ</p>
+          <p>Разработка &copy; 2017-2018 <span class="creatorsBtn">Cтуденты</span></p>
 
       </div>
 
-      <div class="contact col-md-5 col-xs-12 offset-xs-0">
-        <a href="" style="margin-top: 20px;"><i class="fas fa-phone" aria-hidden="true"></i>Контакты</a>
-        <a href=""><i style="margin-left: -7px;" class="fas fa-envelope" aria-hidden="true"></i>Отправить письмо</a>
-        <a target="_blank" href="https://goo.gl/maps/pzX4aPN4uVu"><i class="fas fa-map-marker" aria-hidden="true"></i>183025, г. Мурманск ул. Полярные зори, 60</a>
+      <div class="contact col-md-5 col-xs-12 offset-md-1">
+        <a href=""><i class="fas fa-phone" aria-hidden="true"></i>Контакты</a>
+        <a href=""><i class="fas fa-envelope" aria-hidden="true"></i>Отправить письмо</a>
+        <a data-toggle="tooltip" data-placement="bottom" title="Как добраться?" class="showmaps"><i style="margin-left: 5px" class="fas fa-map-marker" aria-hidden="true"></i>183025, г. Мурманск ул. Полярные зори, 60</a>
       </div>
 
     </div>
 
     </div>
 
+  </div>
+
+  <div class="maps__container">
+   <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac5d4cd509d2a3f2bac788385e73fddbfa1f9650851c84cf7cb6dcbbd4add460f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
   </div>
 
   <div class="underfooter">

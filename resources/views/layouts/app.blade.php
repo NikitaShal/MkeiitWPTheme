@@ -2,31 +2,28 @@
 <html @php(language_attributes())>
   @include('partials.head')
   <body @php(body_class())>
+    <div class="creators">
+      test kek
+    </div>
+    <div class="allWrapper">
     @php(do_action('get_header'))
     @include('partials.header')
-    @include('partials.nav')
+    <?php $detect = new Mobile_Detect; ?>
+    <? if ( $detect->isMobile() ): ?>
+      @include('partials.navMobile')
+    <? else: ?>
+      @include('partials.navDesktop')
+    <? endif; ?>
     <div class="wrap" role="document">
       <div class="content">
         <main class="main">
           @yield('content')
         </main>
-        @if (App\display_sidebar())
-<!--           <aside class="sidebar">
-            @include('partials.sidebar')
-          </aside> -->
-        @endif
       </div>
     </div>
-
-<!--     <div class="fab-container">
-      <a href="" target="_blank">
-        <div class="profile fab" tooltip="Расписание">
-        </div>
-      </a>
-    </div> -->
-
     @php(do_action('get_footer'))
     @include('partials.footer')
     @php(wp_footer())
+    </div>
   </body>
 </html>

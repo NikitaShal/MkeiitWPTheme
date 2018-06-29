@@ -72,6 +72,10 @@
   }
 }
 
+.nav-wrapper ul li:hover > ul {
+  display: block;
+}
+
 .search-container {
   vertical-align: middle;
   white-space: normal;

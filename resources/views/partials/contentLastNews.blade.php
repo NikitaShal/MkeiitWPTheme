@@ -1,4 +1,4 @@
-<div class="col-md-4 col-xs-12 offset-lg-2">
+<div class="col-md-4 col-xs-12 offset-lg-1">
   <article @php(post_class())>
     <header>
     <?php if ( has_post_thumbnail() ) {
@@ -15,3 +15,4 @@
     @include('partials.entry-meta')
   </article>
 </div>
+<div class="col-md-1 kostyl"></div>
