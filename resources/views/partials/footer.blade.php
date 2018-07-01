@@ -31,7 +31,7 @@
 
   </div>
 
-  <div class="maps__container">
+  <div data-slideout-ignore class="maps__container">
    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ac5d4cd509d2a3f2bac788385e73fddbfa1f9650851c84cf7cb6dcbbd4add460f&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
   </div>
 
