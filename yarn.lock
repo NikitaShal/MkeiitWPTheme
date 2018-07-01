@@ -1690,6 +1690,10 @@ decompress@^4.0.0:
     pify "^2.3.0"
     strip-dirs "^2.0.0"
 
+decouple@0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/decouple/-/decouple-0.0.2.tgz#cb373640c37f987a5f6866724ccd424a80f9d9a2"
+
 deep-extend@~0.4.0:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/deep-extend/-/deep-extend-0.4.2.tgz#48b699c27e334bf89f10892be432f6e4c7d34a7f"
@@ -1928,6 +1932,10 @@ elliptic@^6.0.0:
 emitter-steward@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/emitter-steward/-/emitter-steward-1.0.0.tgz#f3411ade9758a7565df848b2da0cbbd1b46cbd64"
+
+"emitter@git+https://github.com/Mango/emitter.git#0.0.7":
+  version "0.0.7"
+  resolved "git+https://github.com/Mango/emitter.git#41ab8a3956269c7ed468bde50203e15b3274152f"
 
 emojis-list@^2.0.0:
   version "2.1.0"
@@ -6344,6 +6352,13 @@ slice-ansi@1.0.0:
 slick-carousel@^1.8.1:
   version "1.8.1"
   resolved "https://registry.yarnpkg.com/slick-carousel/-/slick-carousel-1.8.1.tgz#a4bfb29014887bb66ce528b90bd0cda262cc8f8d"
+
+slideout@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/slideout/-/slideout-1.0.1.tgz#49f2fbd7e4155fe0dbe6d95938f012243565f625"
+  dependencies:
+    decouple "0.0.2"
+    emitter "git+https://github.com/Mango/emitter.git#0.0.7"
 
 sntp@1.x.x:
   version "1.0.9"

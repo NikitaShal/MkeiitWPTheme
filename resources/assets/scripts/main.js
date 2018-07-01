@@ -7,6 +7,9 @@ import "./autoload/**/*"
 // Import Slick
 import 'slick-carousel/slick/slick.min';
 
+// Import Slideout
+import 'slideout/dist/slideout';
+
 // import local dependencies
 import Router from './util/Router';
 import common from './routes/common';

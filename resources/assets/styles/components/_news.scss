@@ -41,6 +41,10 @@
     margin-top: 50px;
   }
 
+  .img-fluid {
+    text-align: center;
+  }
+
   i {
     color: #007ee5;
     font-size: 1.1rem;
@@ -54,6 +58,11 @@
 
     h3 {
       text-align: center;
+      font-size: 1.2rem;
+    }
+
+    img {
+      width: 250px;
     }
 
     h1 {

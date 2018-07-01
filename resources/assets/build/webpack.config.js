@@ -152,6 +152,7 @@ let webpackConfig = {
       jQuery: 'jquery',
       'window.jQuery': 'jquery',
       Popper: 'popper.js/dist/umd/popper.js',
+      Slideout: 'slideout/dist/slideout.js',
     }),
     new webpack.LoaderOptionsPlugin({
       minimize: config.enabled.optimize,

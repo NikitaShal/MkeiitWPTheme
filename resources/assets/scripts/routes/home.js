@@ -34,7 +34,7 @@ export default {
             settings: {
               arrows: false,
               centerMode: true,
-              centerPadding: '40px',
+              centerPadding: '10px',
               slidesToShow: 1,
             },
           },
@@ -64,7 +64,7 @@ export default {
             settings: {
               arrows: false,
               centerMode: true,
-              centerPadding: '40px',
+              centerPadding: '10px',
               slidesToShow: 1,
               adaptiveHeight: true,
             },
@@ -75,5 +75,6 @@ export default {
   },
   finalize() {
     // JavaScript to be fired on the home page, after the init JS
+    $(document).scrollTop(0);
   },
 };

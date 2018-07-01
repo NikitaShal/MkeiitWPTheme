@@ -4,7 +4,7 @@
 
   <div class="container">
 
-    <div class="row links_carousel">
+    <div class="row links_carousel" data-slideout-ignore>
 
       <div class="col-xs-12 col-md-4 cardM">
 

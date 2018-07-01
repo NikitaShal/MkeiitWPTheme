@@ -6,7 +6,7 @@
 
     <div class="container">
 
-      <div class="row news">
+      <div class="row news" data-slideout-ignore>
       <?php query_posts( 'posts_per_page=4' ); ?>
         @while (have_posts()) @php(the_post())
           @include('partials.contentLastNews-'.get_post_type())

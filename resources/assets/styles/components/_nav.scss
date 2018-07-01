@@ -6,8 +6,10 @@
 }
 
 .nav-wrapper {
-  z-index: 10;
+  z-index: 9999999;
   position: sticky;
+  position: -webkit-sticky;
+  top: 0; /* required */
   background-color: #006dc6;
   font-size: 18px;
   min-width: 100%;
@@ -144,8 +146,50 @@
   }
 }
 
+.brandnameShort {
+  color: #fafafa;
+  font-weight: 400;
+  font-size: 1.7rem;
+  opacity: 0;
+  display: none;
+  position: absolute;
+  padding-top: 5px;
+  left: 0;
+  right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px; /* Need a specific value to work */
+}
+
+.menuOpen {
+  color: #fff;
+  padding-top: 14px;
+  font-size: 1.3rem;
+  margin-left: auto;
+  margin-right: 25px;
+  cursor: pointer;
+  position: relative;
+  display: none;
+}
+
 @include media-breakpoint-down(md) {
   .ad {
     display: none;
+  }
+
+  .nav-wrapper {
+    justify-content: left;
+  }
+
+  .scroll {
+    display: none;
+  }
+
+  .menuOpen {
+    display: block;
+  }
+
+  .brandnameShort {
+    display: inline-block;
   }
 }

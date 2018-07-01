@@ -1,12 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
+  <h1 style="text-align: center; margin-top: 50px;">Такой страницы я не нашел, зато нашел котика</h1>
 
-  @if (!have_posts())
-    <div class="alert alert-warning">
-      {{ __('Извините но такой страницы не существует :(', 'sage') }}
-    </div>
-    {!! get_search_form(false) !!}
-  @endif
+  <div style="text-align: center;" class="centerhack">
+  <img src="http://thecatapi.com/api/images/get?format=src&results_per_page=20" alt="">
+  </div>
 @endsection

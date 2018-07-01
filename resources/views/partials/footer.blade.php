@@ -15,7 +15,7 @@
           </div>
 
           <p>Информация &copy; 1997-2018 МКЭиИТ</p>
-          <p>Разработка &copy; 2017-2018 <span class="creatorsBtn">Cтуденты</span></p>
+          <p>Разработка &copy; 2017-2018 <a href="https://github.com/NikitaShal/MkeiitWPTheme#%D0%92-%D0%B7%D0%B0%D0%BA%D0%BB%D1%8E%D1%87%D0%B5%D0%BD%D0%B8%D0%B5" target="_blank" class="creatorsBtn">Cтуденты</a></p>
 
       </div>
 
@@ -41,9 +41,15 @@
 
     <div class="row">
 
+      <div class="col">
+
+        <a href="">www.<span>mcesii</span>.ru</a>
+
+      </div>
+
       <div class="col offset-md-1">
 
-        <a style="margin-left: 55px;" href="">www.<span>mcesii</span>.ru</a>
+        <a class="opensourceBtn" style="margin-left: 55px;" target="_blank" href="https://github.com/NikitaShal/MkeiitWPTheme"><span>открытый исходный</span> код на <i class="fab fa-github"></i></a>
 
       </div>
 

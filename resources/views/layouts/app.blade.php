@@ -2,18 +2,14 @@
 <html @php(language_attributes())>
   @include('partials.head')
   <body @php(body_class())>
-    <div class="creators">
-      test kek
-    </div>
-    <div class="allWrapper">
+    <?php $detect = new Mobile_Detect; ?>
+    <?php if ( $detect->isMobile() ): ?>
+      @include('partials.navMobile')
+    <?php endif; ?>
+    <div id="panel">
     @php(do_action('get_header'))
     @include('partials.header')
-    <?php $detect = new Mobile_Detect; ?>
-    <? if ( $detect->isMobile() ): ?>
-      @include('partials.navMobile')
-    <? else: ?>
-      @include('partials.navDesktop')
-    <? endif; ?>
+    @include('partials.navDesktop')
     <div class="wrap" role="document">
       <div class="content">
         <main class="main">
