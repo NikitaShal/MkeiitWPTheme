@@ -17,11 +17,19 @@
 
 .brand {
   padding-bottom: 50px;
-  // .brand__img {
-  //   width: 170px;
-  //   height: 100%;
-  //   display: inline-block;
-  // }
+
+  .brand__img {
+    position: absolute;
+    margin-left: -135px;
+
+    img {
+      height: 100%;
+      width: 120px;
+      display: inline-block;
+      padding-top: 25px;
+      float: left;
+    }
+  }
 
   .brandname {
     padding-bottom: 0;

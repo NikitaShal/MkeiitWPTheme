@@ -1,3 +1,27 @@
-// .entry-content {
+@include media-breakpoint-down(md) {
+  article {
+    margin-left: 0;
+    padding-left: 0;
+    left: 0;
+    right: 0;
 
-// }
+    h1 {
+      font-size: 1.2rem;
+      color: #007ee5;
+    }
+
+    i {
+      font-size: 0.9rem;
+      color: #007ee5;
+    }
+
+    .updated {
+      font-size: 0.9rem;
+      color: #007ee5;
+    }
+
+    .content {
+      padding-top: 10px;
+    }
+  }
+}

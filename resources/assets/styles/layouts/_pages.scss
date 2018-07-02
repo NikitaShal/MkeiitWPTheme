@@ -1,0 +1,22 @@
+.postWithCard {
+  margin-top: 50px;
+  padding-bottom: 20px;
+  background-color: #fafafa;
+  -webkit-box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.2);
+
+  h1 {
+    color: #007ee5;
+  }
+}
+
+.page-header {
+  color: #007ee5;
+}
+
+@include media-breakpoint-down(md) {
+  h1 {
+    font-size: 1.6rem;
+  }
+}

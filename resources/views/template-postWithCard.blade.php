@@ -1,22 +1,17 @@
 {{--
-  Template Name: Все новости
+  Template Name: Страница на карточке
 --}}
 
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
-
+  
 <div class="container">
-	<div class="row">
-		<div class="col-md-9">
+	<div class="postWithCard">
+		@include('partials.page-header')
 		@while (have_posts()) @php(the_post())
     		@include('partials.content-'.get_post_type())
   		@endwhile
-	</div>
-	<div class="col-md-3">
-		@include('partials.sidebar')	
-	</div>
 	</div>
 </div>	
 

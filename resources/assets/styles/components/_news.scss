@@ -1,8 +1,14 @@
 .last_news {
   margin-top: 80px;
 
+  .news {
+    margin-left: 40px;
+  }
+
   .cardM {
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.23), 0 0 20px rgba(0, 0, 0, 0.23);
+    -webkit-box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.3);
     padding-top: 0;
 
     .allnews {
@@ -19,6 +25,12 @@
         transition: 0.2s ease-in-out;
       }
     }
+  }
+
+  .img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   h1 {
@@ -51,6 +63,10 @@
 @include media-breakpoint-down(md) {
   .last_news {
     text-align: justify;
+
+    .news {
+      margin-left: 0;
+    }
 
     .img-fluid {
       display: block;

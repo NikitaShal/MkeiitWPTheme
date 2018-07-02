@@ -8,7 +8,7 @@ MkeiitWPTheme - тема созданая студентами колледжа 
 
 ## Внимание!
 
-Прежде чем читать дальше, вам нужно иметь представление о разработке сайтов, минимальные знания разработки для Wordpress и иметь в доте не меньше 1000 часов. Если хоть один из этих пунктов не соблюден уходи и не возвращайся пока не прокачаешься. А если тебе нравиться delphi, чтоб я больше тебя здесь не видел ты меня понял?!
+Прежде чем читать дальше, вам нужно иметь представление о разработке сайтов, минимальные знания разработки для Wordpress и иметь в доте не меньше 1000 часов. Если хоть один из этих пунктов не соблюден уходи и не возвращайся пока не прокачаешься. А если тебе нравится delphi, чтоб я больше тебя здесь не видел ты меня понял?!
 
 ## Все не так просто. Продвинутая разработка front-end благодаря:
 
@@ -20,6 +20,7 @@ MkeiitWPTheme - тема созданая студентами колледжа 
 * [Controller](https://github.com/soberwp/controller) для управления данными в фреймворке Laravel
 * [Bootstrap 4](http://getbootstrap.com/) - адаптивная сетка
 * [Font Awesome](https://fontawesome.com) - иконки
+* и еще много других умных слов которые мне лень писать
 
 ## Зависимости
 
@@ -35,6 +36,7 @@ MkeiitWPTheme - тема созданая студентами колледжа 
 * [Ajax Load More](https://ru.wordpress.org/plugins/ajax-load-more/)
 * [Archives Calendar Widget](https://ru.wordpress.org/plugins/archives-calendar-widget/)
 * [Button visually impaired](https://ru.wordpress.org/plugins/button-visually-impaired/)
+* [reSmush.it Image Optimizer](https://wordpress.org/plugins/resmushit-image-optimizer/)
 
 ## Установка и сборка темы для своего сайта на Wordpress
 

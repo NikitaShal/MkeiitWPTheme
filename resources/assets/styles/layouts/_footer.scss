@@ -77,6 +77,18 @@ footer {
       font-weight: 500;
     }
   }
+
+  .closeMap {
+    position: relative;
+    margin: 0 auto;
+    display: none;
+    cursor: pointer;
+
+    i {
+      font-size: 1.2rem;
+      color: #fafafa;
+    }
+  }
 }
 
 @include media-breakpoint-down(md) {
@@ -91,6 +103,8 @@ footer {
   }
 
   .opensourceBtn {
+    float: right;
+
     span {
       display: none;
     }

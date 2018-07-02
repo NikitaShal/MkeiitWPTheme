@@ -1,4 +1,4 @@
-<div class="col-md-4 col-xs-12 offset-lg-1">
+<div class="col-md-5 col-xs-12">
   <article @php(post_class())>
     <header>
     <?php if ( has_post_thumbnail() ) {
