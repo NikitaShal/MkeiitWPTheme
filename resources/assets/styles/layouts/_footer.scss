@@ -24,7 +24,7 @@ footer {
         font-weight: 500;
         font-size: 1.2rem;
         color: #fafafa;
-        line-height: 0.5;
+        line-height: 1;
 
         a {
           color: #ffb74d;
@@ -90,13 +90,10 @@ footer {
     }
   }
 
-  .copynamefooter {
-    margin-top: 40px !important;
-  }
-
   .opensourceBtn {
     span {
       display: none;
     }
   }
 }
+
