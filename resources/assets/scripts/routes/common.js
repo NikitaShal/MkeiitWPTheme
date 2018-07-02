@@ -1,24 +1,26 @@
 export default {
   init() {
     // JavaScript to be fired on all pages
-    $(window).scroll(function(){
-      $(".brandnameShort").css("opacity", 0 + $(window).scrollTop() / 130);
-    });
-
-      $('.search-field').focus(function(){
-
-        $(".brandnameShort").hide("slow");
-
-      }).blur(function(){
-
-        $(".brandnameShort").show("slow");
-
+    if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+      $(window).scroll(function(){
+        $(".brandnameShort").css("opacity", 0 + $(window).scrollTop() / 130);
       });
 
-      $(".brandnameShort").click(function() {
-         $("html, body").animate({ scrollTop: 0 }, "slow");
-         return false;
-      });
+        $('.search-field').focus(function(){
+
+          $(".brandnameShort").hide("slow");
+
+        }).blur(function(){
+
+          $(".brandnameShort").show("slow");
+
+        });
+
+        $(".brandnameShort").click(function() {
+           $("html, body").animate({ scrollTop: 0 }, "slow");
+           return false;
+        });
+    }
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired

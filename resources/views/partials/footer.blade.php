@@ -21,7 +21,7 @@
 
       <div class="contact col-md-5 col-xs-12 offset-md-1">
         <a href=""><i class="fas fa-phone" aria-hidden="true"></i>Контакты</a>
-        <a href=""><i class="fas fa-envelope" aria-hidden="true"></i>Отправить письмо</a>
+        <a href="mailto:kostash@mcesii.ru"><i class="fas fa-envelope" aria-hidden="true"></i>Отправить письмо</a>
         <a data-toggle="tooltip" data-placement="bottom" title="Как добраться?" class="showmaps"><i style="margin-left: 5px" class="fas fa-map-marker" aria-hidden="true"></i>183025, г. Мурманск ул. Полярные зори, 60</a>
       </div>
 

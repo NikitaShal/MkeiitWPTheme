@@ -6,11 +6,11 @@
 
     <h1><span>список специальностей</span></h1>
 
-    <? if ( $detect->isMobile() ): ?>
+    <?php if ( $detect->isMobile() ): ?>
       @include('partials.specmobile')
-    <? else: ?>
+    <?php else: ?>
       @include('partials.specdesktop')
-    <? endif; ?>
+    <?php endif; ?>
 
   </div>
 
