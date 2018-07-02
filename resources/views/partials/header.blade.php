@@ -26,7 +26,7 @@
         </div>
       </div>
 
-      <div class="modal fade">
+      <div id="" class="modal fade">
         <div class="modal-dialog modal-lg" role="document">
           <div class="modal-content">
             <div class="modal-header">

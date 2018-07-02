@@ -10,6 +10,7 @@ export default {
       autoplaySpeed: 1500,
       zIndex: 5,
     });
+    $('.modal').appendTo("body");
     // only for mobile carousel
     if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
       $( ".post" ).addClass( "text-center" )
