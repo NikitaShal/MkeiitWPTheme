@@ -1,9 +1,6 @@
 # [MkeiitWPTheme](mcesii.ru)
 [![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com)
-<p align="center">
-  <img width="200px" src="https://github.com/NikitaShal/MkeiitWPTheme/blob/master/resources/assets/images/McesiiColorPallete.jpg">
-</p>
 
 ## Введение 
 
@@ -12,6 +9,10 @@ MkeiitWPTheme - тема созданая студентами колледжа 
 ## Внимание!
 
 Прежде чем читать дальше, вам нужно иметь представление о разработке сайтов, минимальные знания разработки для Wordpress и иметь в доте не меньше 1000 часов. Если хоть один из этих пунктов не соблюден уходи и не возвращайся пока не прокачаешься. А если тебе нравится delphi, чтоб я больше тебя здесь не видел ты меня понял?!
+
+<p align="center">
+  <img width="400px" src="https://github.com/NikitaShal/MkeiitWPTheme/blob/master/resources/assets/images/McesiiColorPallete.jpg">
+</p>
 
 ## Все не так просто. Продвинутая разработка front-end благодаря:
 
