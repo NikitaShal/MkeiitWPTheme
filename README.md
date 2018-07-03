@@ -1,7 +1,9 @@
 # [MkeiitWPTheme](mcesii.ru)
 [![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com)
-![Модная палетка я же инста тп](https://github.com/NikitaShal/MkeiitWPTheme/blob/master/resources/assets/images/McesiiColorPallete.jpg)
+<p align="center">
+  <img width="200px" src="https://github.com/NikitaShal/MkeiitWPTheme/blob/master/resources/assets/images/McesiiColorPallete.jpg">
+</p>
 
 ## Введение 
 
