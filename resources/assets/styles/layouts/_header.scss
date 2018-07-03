@@ -18,6 +18,15 @@
 .brand {
   padding-bottom: 50px;
 
+  .gosty {
+    .agerestricted {
+      padding-left: 225px;
+      padding-top: 10px;
+      color: #fafafa;
+      font-size: 1.4rem;
+    }
+  }
+
   .brand__img {
     position: absolute;
     margin-left: -135px;
@@ -38,7 +47,7 @@
     display: inline-block;
     vertical-align: top;
     line-height: 1;
-    margin-top: 55px;
+    margin-top: 20px;
     letter-spacing: -0.5px;
     font-weight: 500;
 

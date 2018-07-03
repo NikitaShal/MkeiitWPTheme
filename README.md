@@ -1,10 +1,11 @@
 # [MkeiitWPTheme](mcesii.ru)
 [![forthebadge](http://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/you-didnt-ask-for-this.svg)](http://forthebadge.com)
+![Settings Window](https://raw.github.com/ryanmaxwell/iArrived/master/Screenshots/Settings.png)
 
 ## Введение 
 
-MkeiitWPTheme - тема созданая студентами колледжа Экономики и Информационных технологий г. Мурманска. Тема создана и заточена под использование только в рамках нашего учереждения, ~~однако для удобства эксплуатирования, она легко настраивается, благодаря чему вы так же можете использовать данную тему в своих целях~~(мне некогда это доделывать), бесплатно. Исходный код находиться под лицензией [GNU](https://github.com/NikitaShal/McesiiWpTheme/blob/master/LICENSE.md), что позваляет вам использовать тему как угодно, но не в коммерческих целях.
+MkeiitWPTheme - тема созданая студентами колледжа Экономики и Информационных технологий г. Мурманска. Тема создана и заточена под использование только в рамках нашего учереждения, ~~однако для удобства эксплуатирования, она легко настраивается, благодаря чему вы так же можете использовать данную тему в своих целях~~(мне некогда это доделывать), бесплатно. Исходный код находиться под лицензией [GNU](https://github.com/NikitaShal/MkeiitWPTheme/blob/master/LICENSE), что позваляет вам использовать тему как угодно, но не в коммерческих целях.
 
 ## Внимание!
 

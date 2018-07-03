@@ -3,7 +3,10 @@
     <div class="row">
       <div class="col-md-7">
         <div class="brand">
-          <?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?>
+          <div class="gosty">
+            <?php echo do_shortcode( '[bvi text="Версия для слабовидящих"]' ); ?>
+            <div class="agerestricted">6+</div>
+          </div>
 <!--           <a class="brand__img" href="<?= esc_url(home_url('/')); ?>">
             <img src="@asset('images/MkeiitLogoOptimazed.png')" alt="">
           </a> -->

@@ -2,7 +2,7 @@
 <article class="container" @php(post_class())>
 
 	<div class="row">
-		<div class="col-md-9">
+		<div class="col-md-9 contentSingle">
 			<header>
 			<h1 class="entry-title">{{ get_the_title() }}</h1>
 				@include('partials/entry-meta')
