@@ -11,7 +11,7 @@ MkeiitWPTheme - тема созданая студентами колледжа 
 Прежде чем читать дальше, вам нужно иметь представление о разработке сайтов, минимальные знания разработки для Wordpress и иметь в доте не меньше 1000 часов. Если хоть один из этих пунктов не соблюден уходи и не возвращайся пока не прокачаешься. А если тебе нравится delphi, чтоб я больше тебя здесь не видел ты меня понял?!
 
 <p align="center">
-  <img width="400px" src="https://github.com/NikitaShal/MkeiitWPTheme/blob/master/resources/assets/images/McesiiColorPallete.jpg">
+  <img width="100%" src="https://github.com/NikitaShal/MkeiitWPTheme/blob/master/resources/assets/images/McesiiColorPallete.jpg">
 </p>
 
 ## Все не так просто. Продвинутая разработка front-end благодаря:
