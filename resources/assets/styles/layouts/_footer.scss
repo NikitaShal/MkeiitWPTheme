@@ -2,7 +2,7 @@ footer {
   margin-top: 50px;
 
   .wrapper__footer {
-    background-color: #007ee5;
+    background-color: $color-primary;
     padding-top: 25px;
     padding-bottom: 20px;
 
@@ -10,7 +10,7 @@ footer {
       font-size: 1.5rem;
 
       a {
-        color: #fafafa;
+        color: $color-bg;
         font-weight: 500;
 
         &:hover {
@@ -23,11 +23,11 @@ footer {
       p {
         font-weight: 500;
         font-size: 1.2rem;
-        color: #fafafa;
+        color: $color-bg;
         line-height: 1;
 
         a {
-          color: #ffb74d;
+          color: $color-accent;
           cursor: pointer;
         }
       }
@@ -46,7 +46,7 @@ footer {
       a {
         font-weight: 500;
         font-size: 1.3rem;
-        color: #fafafa;
+        color: $color-bg;
         line-height: 1;
         margin-bottom: 25px;
         display: inherit;
@@ -54,7 +54,7 @@ footer {
         text-decoration: none;
 
         &:hover {
-          color: #fafafa;
+          color: $color-bg;
         }
       }
     }
@@ -66,12 +66,12 @@ footer {
 }
 
 .underfooter {
-  background-color: #006dc6;
+  background-color: $color-secondary;
   padding-top: 20px;
   padding-bottom: 20px;
 
   a {
-    color: #fafafa;
+    color: $color-bg;
 
     span {
       font-weight: 500;
@@ -86,7 +86,7 @@ footer {
 
     i {
       font-size: 1.2rem;
-      color: #fafafa;
+      color: $color-bg;
     }
   }
 }
@@ -97,7 +97,7 @@ footer {
       font-weight: 500;
       display: inline-block;
       font-size: 1rem !important;
-      color: #fafafa;
+      color: $color-bg;
       padding-left: 0 !important;
     }
   }

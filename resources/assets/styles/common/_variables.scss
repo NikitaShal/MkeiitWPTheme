@@ -7,6 +7,9 @@ $slick-font-path: "~slick-carousel/slick/fonts/";
 // Slick Carousel ajax-loader.gif path
 $slick-loader-path: "~slick-carousel/slick/";
 
-$theme-colors: (
-  primary: #007ee5
-);
+$color-primary: #007ee5;
+$color-secondary: #006dc6;
+$color-accent: #ffb74d;
+$color-support: #8bc34a; //link section
+$color-selector: #90caf9; // cursor color selector
+$color-bg: #fafafa; // for text color and some bg

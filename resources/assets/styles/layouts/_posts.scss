@@ -11,17 +11,17 @@
 
     h1 {
       font-size: 1.2rem;
-      color: #007ee5;
+      color: $color-primary;
     }
 
     i {
       font-size: 0.9rem;
-      color: #007ee5;
+      color: $color-primary;
     }
 
     .updated {
       font-size: 0.9rem;
-      color: #007ee5;
+      color: $color-primary;
     }
 
     .content {
@@ -32,13 +32,6 @@
 
 article {
   h1 {
-    padding-top: 25px;
     font-size: 2rem;
-  }
-
-  .contentSingle {
-    -webkit-box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.3);
-    box-shadow: 0 0 7px 1px rgba(0, 0, 0, 0.3);
   }
 }

@@ -1,5 +1,5 @@
 .header {
-  background-color: #007ee5;
+  background-color: $color-primary;
   padding-top: 0;
   padding-bottom: 0;
   margin-bottom: 0;
@@ -7,7 +7,7 @@
   .copyname {
     font-size: 2rem;
     position: relative;
-    color: #fafafa;
+    color: $color-bg;
     cursor: pointer;
     display: block;
     float: right;
@@ -22,7 +22,7 @@
     .agerestricted {
       padding-left: 225px;
       padding-top: 10px;
-      color: #fafafa;
+      color: $color-bg;
       font-size: 1.4rem;
     }
   }
@@ -43,7 +43,7 @@
   .brandname {
     padding-bottom: 0;
     font-size: 1.1rem;
-    color: #fafafa;
+    color: $color-bg;
     display: inline-block;
     vertical-align: top;
     line-height: 1;
@@ -64,7 +64,7 @@
   text-align: center;
 
   .enter {
-    background-color: #fafafa;
+    background-color: $color-bg;
     padding: 15px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
@@ -74,14 +74,14 @@
     }
 
     a {
-      color: #ffb74d;
+      color: $color-accent;
       font-size: 1.5rem;
       font-weight: 500;
     }
   }
 
   .already {
-    color: #fafafa !important;
+    color: $color-bg !important;
     font-size: 1.1rem;
     padding-top: 20px;
 

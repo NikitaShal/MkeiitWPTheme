@@ -10,7 +10,7 @@
   position: sticky;
   position: -webkit-sticky;
   top: 0; /* required */
-  background-color: #006dc6;
+  background-color: $color-secondary;
   font-size: 18px;
   min-width: 100%;
   display: flex;
@@ -25,7 +25,7 @@
 
     li {
       position: relative;
-      background-color: #006dc6;
+      background-color: $color-secondary;
       float: left;
       clear: both;
       width: 100%;
@@ -33,7 +33,7 @@
 
       &:hover {
         a {
-          color: #006dc6 !important;
+          color: $color-secondary !important;
         }
       }
 
@@ -60,7 +60,7 @@
 
       &:hover {
         a {
-          color: #006dc6;
+          color: $color-secondary;
           text-decoration: none;
         }
       }
@@ -86,7 +86,7 @@
   input#search {
     width: 50px;
     height: 47px;
-    background: #006dc6;
+    background: $color-secondary;
     border: none;
     font-size: 10pt;
     float: left;
@@ -124,7 +124,7 @@
     margin-left: 17px;
     margin-top: 10px;
     z-index: 1;
-    color: #fafafa;
+    color: $color-bg;
   }
 
   input#search {
@@ -141,13 +141,13 @@
     }
 
     .icon {
-      color: #fafafa;
+      color: $color-bg;
     }
   }
 }
 
 .brandnameShort {
-  color: #fafafa;
+  color: $color-bg;
   font-weight: 400;
   font-size: 1.7rem;
   opacity: 0;
@@ -162,7 +162,7 @@
 }
 
 .menuOpen {
-  color: #fff;
+  color: $color-bg;
   padding-top: 14px;
   font-size: 1.3rem;
   margin-left: auto;
@@ -194,13 +194,13 @@
   }
 
   .mobileNav {
-    background-color: #007ee5;
+    background-color: $color-primary;
     height: 100%;
     padding-top: 20px;
 
     h2 {
       padding-left: 15px;
-      color: #fff;
+      color: $color-bg;
     }
 
     .navigation {
@@ -218,11 +218,11 @@
       outline: none;
       font-size: 0.9rem;
       margin-bottom: 10px;
-      border-bottom: 1px solid #006dc6;
-      background-color: #007ee5;
+      border-bottom: 1px solid $color-secondary;
+      background-color: $color-primary;
 
       a {
-        color: #fff;
+        color: $color-bg;
       }
 
       .sub-menu {
@@ -232,7 +232,7 @@
 
         .menu-item {
           margin-bottom: 0;
-          border-bottom: 0 #006dc6;
+          border-bottom: 0 $color-secondary;
         }
       }
     }

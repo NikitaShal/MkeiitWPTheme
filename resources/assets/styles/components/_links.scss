@@ -10,12 +10,12 @@
     font-size: 2.5rem;
 
     span {
-      border-bottom: 3px solid #8bc34a;
+      border-bottom: 3px solid $color-support;
     }
   }
 
   h6 {
-    color: #8bc34a;
+    color: $color-support;
   }
 
   a {

@@ -41,7 +41,7 @@
     letter-spacing: -1.5px;
 
     span {
-      border-bottom: 3px solid #007ee5;
+      border-bottom: 3px solid $color-primary;
     }
   }
 
@@ -54,7 +54,7 @@
   }
 
   i {
-    color: #007ee5;
+    color: $color-primary;
     font-size: 1.1rem;
     margin-right: 5px;
   }
