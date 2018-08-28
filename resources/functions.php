@@ -411,6 +411,16 @@ function links_theme_customizer( $wp_customize ) {
         'placeholder' => __( 'Да прямо сюда' ),
       ),
     ) );
+    $wp_customize->add_setting( 'contacts_url_settings');
+    $wp_customize->add_control( 'contacts_url_settings', array(
+      'type' => 'url',
+      'section' => 'links_settings', // Add a default or your own section
+      'label' => __( 'Ссылка на страницу с контактами"' ),
+      'description' => __( 'Давай сюда ссылку' ),
+      'input_attrs' => array(
+        'placeholder' => __( 'Да прямо сюда' ),
+      ),
+    ) );
     function themeslug_sanitize_url( $url ) {
       return esc_url_raw( $url );
     }
