@@ -99,14 +99,34 @@
   margin-top: 10px;
 }
 
-@include media-breakpoint-up(sm) {
+@include media-breakpoint-up(md) {
   .brandname {
     font-size: 2.3rem !important;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .brandname {
+    font-size: 1.8rem !important;
+  }
+
+  .enter {
+    h3 {
+      font-size: 1.4rem;
+    }
+
+    a {
+      font-size: 1.3rem !important;
+    }
   }
 }
 
 @include media-breakpoint-down(sm) {
   .brand {
     padding-bottom: 20px;
+  }
+
+  .brandname {
+    font-size: 1.2rem !important;
   }
 }

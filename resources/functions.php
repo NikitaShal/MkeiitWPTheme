@@ -91,6 +91,20 @@ Container::getInstance()
         ]);
     }, true);
 
+
+function wpb_widgets_init() {
+register_sidebar( array(
+'name' => 'Текст внутри блока "уже поступил"',
+'id' => 'header-widget',
+'before_widget' => '<div class="hw-widget">',
+'after_widget' => '</div>',
+'before_title' => '<h2 class="hw-title">',
+'after_title' => '</h2>',
+) );
+
+}
+add_action( 'widgets_init', 'wpb_widgets_init' );
+
 /**
  * Add carousel customization
  */

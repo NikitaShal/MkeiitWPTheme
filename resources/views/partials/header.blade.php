@@ -37,7 +37,13 @@
               </button>
             </div>
             <div class="modal-body">
-              <p>Вот пара ссылок которые помогут тебе быстрее стать "своим"</p>
+              <?php
+              if ( is_active_sidebar( 'header-widget' ) ) : ?>
+                  <div id="header-widget-area" class="hw-widget widget-area" role="complementary">
+                <?php dynamic_sidebar( 'header-widget' ); ?>
+                  </div>
+                
+              <?php endif; ?>
             </div>
           </div>
         </div>

@@ -101,6 +101,7 @@ add_action('the_post', function ($post) {
  * Setup Sage options
  */
 add_action('after_setup_theme', function () {
+    load_theme_textdomain('sage', get_template_directory() . '/lang');
     /**
      * Add JsonManifest to Sage container
      */
