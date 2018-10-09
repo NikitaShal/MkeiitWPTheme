@@ -14,6 +14,8 @@
 
           <p><?php echo get_theme_mod( 'setting_kurs1_spec3_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs1_spec3_date' ); ?></span></p>
 
+          <p><?php echo get_theme_mod( 'setting_kurs1_spec4_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs1_spec4_date' ); ?></span></p>
+
         </div>
 
         <a href="<?php echo get_theme_mod( 'f1_course_url_settings' ); ?>"><h4 class="more__button invisible">Подробнее..</h4></a>
@@ -34,6 +36,8 @@
 
           <p><?php echo get_theme_mod( 'setting_kurs2_spec3_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs2_spec3_date' ); ?></span></p>
 
+          <p><?php echo get_theme_mod( 'setting_kurs2_spec4_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs2_spec4_date' ); ?></span></p>
+
         </div>
 
         <a href="<?php echo get_theme_mod( 'f2_course_url_settings' ); ?>"><h4 class="more__button invisible">Подробнее..</h4></a>
@@ -51,6 +55,10 @@
           <p><?php echo get_theme_mod( 'setting_kurs3_spec1_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs3_spec1_date' ); ?></span></p>
 
           <p><?php echo get_theme_mod( 'setting_kurs3_spec2_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs3_spec2_date' ); ?></span></p>
+
+          <p><?php echo get_theme_mod( 'setting_kurs3_spec3_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs3_spec3_date' ); ?></span></p>
+
+          <p><?php echo get_theme_mod( 'setting_kurs3_spec4_name' ); ?><span><?php echo get_theme_mod( 'setting_kurs3_spec4_date' ); ?></span></p>
 
         </div>
 

@@ -217,6 +217,22 @@ $wp_customize->add_control('contrl_kurs1_spec3_date',array(
     'settings'=>'setting_kurs1_spec3_date',
 )); add_action('customize_register','panel_spec');
 
+$wp_customize->add_setting( 'setting_kurs1_spec4_name' );
+$wp_customize->add_control('contrl_kurs1_spec4_name',array(
+    'label'=>'Название специальности 4',
+    'type'=>'text',
+    'section'=>'section_spec1',
+    'settings'=>'setting_kurs1_spec4_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs1_spec4_date' );
+$wp_customize->add_control('contrl_kurs1_spec4_date',array(
+    'label'=>'Время обучения',
+    'type'=>'text',
+    'section'=>'section_spec1',
+    'settings'=>'setting_kurs1_spec4_date',
+)); add_action('customize_register','panel_spec');
+
 /**
  * Направление 1 Конец
  */
@@ -283,6 +299,22 @@ $wp_customize->add_control('contrl_kurs2_spec3_name',array(
     'type'=>'text',
     'section'=>'section_spec2',
     'settings'=>'setting_kurs2_spec3_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs2_spec3_date' );
+$wp_customize->add_control('contrl_kurs2_spec3_date',array(
+    'label'=>'Время обучения',
+    'type'=>'text',
+    'section'=>'section_spec2',
+    'settings'=>'setting_kurs2_spec3_date',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs2_spec4_name' );
+$wp_customize->add_control('contrl_kurs2_spec4_name',array(
+    'label'=>'Название специальности 4',
+    'type'=>'text',
+    'section'=>'section_spec2',
+    'settings'=>'setting_kurs2_spec4_name',
 )); add_action('customize_register','panel_spec');
 
 $wp_customize->add_setting( 'setting_kurs2_spec3_date' );
@@ -369,6 +401,22 @@ $wp_customize->add_control('contrl_kurs2_spec3_date',array(
     'settings'=>'setting_kurs3_spec3_date',
 )); add_action('customize_register','panel_spec');
 
+$wp_customize->add_setting( 'setting_kurs3_spec4_name' );
+$wp_customize->add_control('contrl_kurs3_spec4_name',array(
+    'label'=>'Название специальности 4',
+    'type'=>'text',
+    'section'=>'section_spec3',
+    'settings'=>'setting_kurs3_spec4_name',
+)); add_action('customize_register','panel_spec');
+
+$wp_customize->add_setting( 'setting_kurs3_spec4_date' );
+$wp_customize->add_control('contrl_kurs2_spec4_date',array(
+    'label'=>'Время обучения',
+    'type'=>'text',
+    'section'=>'section_spec3',
+    'settings'=>'setting_kurs3_spec4_date',
+)); add_action('customize_register','panel_spec');
+
 /**
  * Направление 3 Конец
  */
@@ -430,6 +478,16 @@ function links_theme_customizer( $wp_customize ) {
       'type' => 'url',
       'section' => 'links_settings', // Add a default or your own section
       'label' => __( 'Ссылка на страницу с контактами"' ),
+      'description' => __( 'Давай сюда ссылку' ),
+      'input_attrs' => array(
+        'placeholder' => __( 'Да прямо сюда' ),
+      ),
+    ) );
+    $wp_customize->add_setting( 'allNews_url_settings');
+    $wp_customize->add_control( 'allNews_url_settings', array(
+      'type' => 'url',
+      'section' => 'links_settings', // Add a default or your own section
+      'label' => __( 'Ссылка на страницу с всеми новостями"' ),
       'description' => __( 'Давай сюда ссылку' ),
       'input_attrs' => array(
         'placeholder' => __( 'Да прямо сюда' ),
